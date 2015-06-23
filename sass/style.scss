@@ -1,5 +1,6 @@
 $background: #FFFFFF;
 $blue: #88AAFF;
+$almost-white: #e6e6e6;
 $hover-bg: darken($background, 10%);
 $icons-color: darken($background, 40%);
 
@@ -107,7 +108,7 @@ $icons-color: darken($background, 40%);
     -moz-appearance: none;
     line-height: 2em;
     padding-left: 35px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid $almost-white;
     border-radius: 20px;
   }
 }
@@ -117,7 +118,7 @@ $icons-color: darken($background, 40%);
   width: 30px;
   height: 30px;
   margin-left: 10px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid $almost-white;
 }
 
 .content-tabs {
@@ -144,7 +145,7 @@ $icons-color: darken($background, 40%);
 
 .footer {
   height: 80px;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $almost-white;
 }
 
 .footer ul, .header ul {
@@ -209,11 +210,11 @@ $icons-color: darken($background, 40%);
   }
 
   .panel {
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $almost-white;
   }
 
   .header {
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $almost-white;
   }
 
   .content-tabs {
@@ -229,7 +230,7 @@ $icons-color: darken($background, 40%);
       border-left: 1px solid white;
       border-right: 1px solid white;
       &:hover {
-        border: 1px solid #e6e6e6;
+        border: 1px solid $almost-white;
         cursor: pointer;
         line-height:23px;
       }}
