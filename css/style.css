@@ -1,9 +1,38 @@
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  30% {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px); }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px); }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px); }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 @font-face {
   font-family: Antonio;
   src: url("../fonts/antonio-bold-webfont.woff"); }
 @font-face {
   font-family: Aargh;
   src: url("../fonts/aaargh-webfont.woff"); }
+@font-face {
+  font-family: 'cooper_hewittbold';
+  src: url("../fonts/cooperhewitt-bold-webfont.woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'cooper_hewittmedium';
+  src: url("../fonts/cooperhewitt-medium-webfont.woff");
+  font-weight: normal;
+  font-style: normal; }
 .transition {
   transition: 1s; }
 
@@ -14,30 +43,40 @@
   overflow: hidden; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #664235; }
+
+body {
+  background: #664235; }
 
 .nav {
   position: fixed;
   top: 0;
   width: 80px;
   height: 100vh;
-  background: #FFFFFF;
-  border-right: 1px solid #e6e6e6; }
+  background: #95E24F; }
 
 .nav-item {
-  height: 80px; }
+  height: 60px; }
   .nav-item:hover {
-    background: #e6e6e6; }
+    cursor: pointer; }
   .nav-item:nth-child(1):hover {
-    background: #ffffff; }
+    cursor: auto; }
   .nav-item a {
     display: block;
-    width: 100%;
+    margin: auto;
     padding: 15px 0;
     text-align: center; }
+    .nav-item a:hover {
+      -webkit-animation: 1s ease;
+      animation: swing 1s ease;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1; }
     .nav-item a i {
-      color: #999999;
-      font-size: 1.5em; }
+      color: #664235;
+      font-size: 2em; }
+      .nav-item a i:hover {
+        font-size: 2.5em; }
     .nav-item a span {
       display: block;
       padding: 5px; }
@@ -56,12 +95,14 @@
   .header-name h1 {
     font-family: Antonio, sans-serif;
     font-size: 40px;
-    margin: 0; }
+    margin: 0;
+    color: #95E24F; }
   .header-name span {
     font-family: Aargh, sans-serif;
     font-size: 15px;
     display: inline-block;
-    margin-top: 5px; }
+    margin-top: 5px;
+    color: #95E24F; }
 
 .panel {
   height: 45px; }
@@ -103,16 +144,38 @@
 
 .content-item {
   margin: 10px;
-  background: #886677;
+  background: #D9DCD6;
   position: relative;
-  width: 38vw; }
+  width: 38vw;
+  height: 125px;
+  overflow: hidden; }
+  .content-item .strong-size-img {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    float: right; }
   .content-item img {
-    float: right;
-    width: 40%; }
+    transition: all 1s ease; }
+    .content-item img:hover {
+      -webkit-filter: blur(3px);
+      cursor: pointer; }
+
+.item-text {
+  position: absolute;
+  left: 0;
+  width: 60%;
+  padding: 0 10px; }
+  .item-text a {
+    text-decoration: none; }
+  .item-text h2 {
+    text-align: center;
+    font-family: 'cooper_hewittmedium', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.5; }
 
 .footer {
-  height: 80px;
-  border-top: 1px solid #e6e6e6; }
+  height: 80px; }
 
 .footer ul, .header ul {
   float: right; }
@@ -124,13 +187,17 @@
 
 .header-item {
   font-size: 3em; }
+  .header-item a i {
+    color: #95E24F; }
+    .header-item a i:hover {
+      color: #428DBC; }
 
 .footer-item a i {
-  color: #665566;
+  color: #428DBC;
   font-size: 1.5em; }
 
 .footer-item a:hover i {
-  color: #889977; }
+  color: #95E24F; }
 
 @media screen and (max-width: 380px) {
   .header {
@@ -157,12 +224,6 @@
   .menu-button {
     display: none; }
 
-  .panel {
-    border-bottom: 1px solid #e6e6e6; }
-
-  .header {
-    border-bottom: 1px solid #e6e6e6; }
-
   .content-tabs {
     display: inline-block;
     float: left;
@@ -171,12 +232,8 @@
       display: inline-block;
       margin-top: 10px;
       padding: 5px 10px;
-      line-height: 25px;
-      border-top: 1px solid white;
-      border-left: 1px solid white;
-      border-right: 1px solid white; }
+      line-height: 25px; }
       .content-tabs li:hover {
-        border: 1px solid #e6e6e6;
         cursor: pointer;
         line-height: 23px; } }
 @media screen and (min-width: 900px) {

@@ -1,0 +1,137 @@
+@import "style";
+
+$light-sea: transparentize(lightseagreen, .7);
+$light-sky: transparentize(lightskyblue, .7);
+$light-gr: transparentize(lightgreen, .7);
+$light-yellow: transparentize(#fcff7f, .7);
+$dark-sea: darken($light-sea, 5%);
+$dark-sky: darken($light-sky, 5%);
+$dark-gr: darken($light-gr, 5%);
+$dark-yellow: darken($light-yellow, 5%);
+
+$mono1: transparentize(#498C8A, .9);
+$mono2: darken($mono1, 10%);
+$mono3: lighten($mono1, 10%);
+
+.article {
+  display: block;
+}
+
+.gradient-wrap {
+  // background: $light;
+  height: 400px;
+  margin-bottom: 15px;
+  border: 5px solid $light;
+  border-radius: 10px;
+  div {
+    height: 100%;
+  }
+}
+
+#lin3 {
+  background: repeating-linear-gradient(to right, $light-sea 21px, $light-sky 22px, $light-sky 42px, $light-gr 43px, $light-gr 63px, $light-yellow 64px, $light-yellow 84px, $light-sea 85px, $light-sea 105px),
+  repeating-linear-gradient(to bottom, $light-sea 21px, $light-sky 22px, $light-sky 42px, $light-gr 43px, $light-gr 63px, $light-yellow 64px, $light-yellow 84px, $light-sea 85px, $light-sea 105px),
+  repeating-linear-gradient(45deg, $light-sea 21px, $light-sky 22px, $light-sky 42px, $light-gr 43px, $light-gr 63px, $light-yellow 64px, $light-yellow 84px, $light-sea 85px, $light-sea 105px),
+  repeating-linear-gradient(-45deg, $light-sea 21px, $light-sky 22px, $light-sky 42px, $light-gr 43px, $light-gr 63px, $light-yellow 64px, $light-yellow 84px, $light-sea 85px, $light-sea 105px);
+}
+
+#lin4 {
+background:
+repeating-linear-gradient(to right, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(10deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(20deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(30deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(40deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(50deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(60deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(70deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(80deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(90deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(100deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(110deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(120deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(130deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(140deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(150deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(160deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(170deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(180deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(190deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(200deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(210deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(220deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(230deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(240deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(250deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(260deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(270deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(280deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(290deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(300deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(310deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(320deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(330deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(340deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px),
+repeating-linear-gradient(350deg, $mono1, $mono1 5px, $mono2 5px, $mono2 10px, $mono3 10px, $mono3 15px);
+}
+
+#lin5 {
+  background: repeating-linear-gradient(to right, $light-gr, $light-gr 10px, $light-sea 10px, $light-sea 20px, $light-yellow 20px, $light-yellow 30px, $light-sky 30px, $light-sky 40px),
+  repeating-linear-gradient(30deg, $light-gr, $light-gr 10px, $light-sea 10px, $light-sea 20px, $light-yellow 20px, $light-yellow 30px, $light-sky 30px, $light-sky 40px),
+  repeating-linear-gradient(60deg, $light-gr, $light-gr 10px, $light-sea 10px, $light-sea 20px, $light-yellow 20px, $light-yellow 30px, $light-sky 30px, $light-sky 40px),
+  repeating-linear-gradient(90deg, $light-gr, $light-gr 10px, $light-sea 10px, $light-sea 20px, $light-yellow 20px, $light-yellow 30px, $light-sky 30px, $light-sky 40px),
+  repeating-linear-gradient(120deg, $light-gr, $light-gr 10px, $light-sea 10px, $light-sea 20px, $light-yellow 20px, $light-yellow 30px, $light-sky 30px, $light-sky 40px),
+  repeating-linear-gradient(150deg, $light-gr, $light-gr 10px, $light-sea 10px, $light-sea 20px, $light-yellow 20px, $light-yellow 30px, $light-sky 30px, $light-sky 40px);
+}
+
+#lin6 {
+  background: linear-gradient(to right, $light-sea 0, $light-sky 50%);
+}
+
+#lin7 {
+  background: repeating-linear-gradient(to right, $light-sea, $dark-sea 41px, $light-sky 42px, $dark-sky 82px, $light-gr 83px, $dark-gr 123px, $light-yellow 124px, $dark-yellow 164px);
+}
+
+#lin8 {
+  background: repeating-linear-gradient(to left top, $light-sea, $dark-sea 4px, $light-sky 5px, $dark-sky 9px, $light-gr 10px, $dark-gr 14px, $light-yellow 15px, $dark-yellow 19px);
+}
+
+#lin9 {
+  background: linear-gradient(to bottom, $light-gr, $light-yellow);
+}
+
+#rad1 {
+  background: repeating-radial-gradient(25% 50%, $light-sea 0, $light-sky 20%, $light-gr 50%, $light-yellow 70%, $light-sea 90%);
+}
+
+#rad2 {
+  background: radial-gradient(50% 25%, $light-sea 0, $light-sky 20%, $light-gr 50%, $light-yellow 80%);
+}
+
+#rad3 {
+  background: repeating-radial-gradient(farthest-side at 300px 150px, $light-sea 41px, $light-sky 42px, $light-sky 82px, $light-gr 83px, $light-gr 123px, $light-yellow 124px, $light-yellow 164px, $light-sea 165px, $light-sea 205px);
+}
+
+#rad4 {
+  background: repeating-radial-gradient($light-sky 10%, $light-gr 15%, $light-gr 15%, $light-yellow 15%, $light-yellow 20%, $light-sea 20%, $light-sea 25%);
+}
+
+#rad5 {
+  background: repeating-radial-gradient(25% 50%, $light-gr, $light-gr 10px, $light-sea 10px, $light-sea 20px, $light-yellow 20px, $light-yellow 30px, $light-sky 30px, $light-sky 40px);
+}
+
+#rad6 {
+  background: radial-gradient(closest-corner at 50px 50px, $light-sea 0, $light-sky 50%);
+}
+
+#rad7 {
+  background: repeating-radial-gradient(closest-side at 40px 50px, $light-sea, 41px, $light-sky 42px, $dark-sky 82px, $light-gr 83px, $dark-gr 123px, $light-yellow 124px, $dark-yellow 164px);
+}
+
+#rad8 {
+  background: repeating-radial-gradient(farthest-corner at 5px 5px, $light-sea, $dark-sea 4px, $light-sky 5px, $dark-sky 9px, $light-gr 10px, $dark-gr 14px, $light-yellow 15px, $dark-yellow 19px);
+}
+
+#rad9 {
+  background: radial-gradient(20% 80%, $light-gr, $light-yellow);
+}
